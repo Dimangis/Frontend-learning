@@ -290,14 +290,14 @@ html {
 
 }
 
-.section-cliens-username{
+.section-cliens-username {
     font-size: 17px;
     line-height: 25px;
     font-weight: 600;
     color: #1c1c1c;
 }
 
-.section-cliens-description{
+.section-cliens-description {
     font-style: 14px;
     line-height: 25px;
     color: #787878;
@@ -315,6 +315,7 @@ html {
 .section-contacts {
     padding-top: 85px;
     padding-bottom: 95px;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .section-contacts-list {
@@ -356,6 +357,19 @@ html {
 .section-contacts-heading {
     display: block;
     margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1;
+    color: #1c1c1c;
+}
+
+.section-contacts-info {
+    font-size: 14px;
+    line-height: 25px;
+    color: #787878;
+}
+
+.section-contacts-link {
+    color: #787878;
 }
 
 /* Footer */
@@ -370,6 +384,11 @@ html {
     height: 100%;
 }
 
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
 .footer-left {
     display: flex;
     align-items: center;
@@ -379,14 +398,65 @@ html {
     margin-right: 25px;
 }
 
+.footer-copyrights{
+    font-size: 12px;
+    line-height: 17px;
+    color: #787878;
+}
+
+.footer-nav{
+    margin-right: 55px;
+}
+
 .footer-nav-list {
     display: flex;
 }
 
 .footer-nav-item {
-    flex: 1 1 25%;
+    font-size: 14px;
+    line-height: 1;
 }
 
 .footer-nav-item:not(:last-child) {
     margin-right: 35px;
+}
+
+.footer-nav-link{
+    color: #787878;    
+}
+
+.footer-social-list{
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.footer-social-icon{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+}
+
+.footer-social-twitter{
+    width: 18px;
+    height: 15px;
+    background-image: url('../img/Twitter.svg');
+}
+
+.footer-social-linkedin{
+    width: 18px;
+    height: 19px;
+    background-image: url('../img/Linkedin.svg');
+    transform: translateY(-2px);
+}
+
+.footer-social-email{
+    width: 24px;
+    height: 17px;
+    background-image: url('../img/Email.svg');
 }
