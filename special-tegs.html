@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank"><!-- применение ко всем ссылкам в документе -->
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="200" height="200">
+        <p>Ваш браузер не поддерживает рисование</p>
+    </canvas>
+
+    <address>Tratata</address>
+
+    <details>
+        <summary>Spoiler</summary>
+        <p>Text</p>
+    </details>
+
+    <mark>Word</mark>
+
+    <sub>Up line</sub>
+    <sub>Down line</sub>
+
+    <abbr title="Some termin">Word</abbr>
+
+    <audio controls>
+        <source src="/assets/audio.mp3" type="audio/mpeg">
+        <source src="/assets/audio.ogg" type="audio/ogg">
+        <p>Ваш браузер не поддерживает</p>
+    </audio>
+
+    <video controls playsinline ,uted autoplay poster="/assets/img.jpg">
+        <source src="/assets/audio.mp4" type="audio/mp4">
+        <source src="/assets/audio.webm" type="audio/webm">
+        <p>Ваш браузер не поддерживает</p>
+    </video>
+    <!-- playsinline -начать проигрывать видео не в полноэкранном режиме, иначе IOS накажет -->
+    <!-- poster - начальная картинка видео до проигрывания -->
+    <!-- autoplay - автовоспроизведение + лучше указать muted-->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=EbR3khgZoq0" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- frameborder="0" - толщина вокруг окна -->
+
+    <picture>
+        <source srcset="https://habrastorage.org/r/w1560/getpro/habr/upload_files/111/522/281/11152228177743773588dffef2f6fc53.jpeg 1x, https://habrastorage.org/r/w1560/getpro/habr/upload_files/111/522/281/11152228177743773588dffef2f6fc53.jpeg 2x">
+         <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/111/522/281/11152228177743773588dffef2f6fc53.jpeg"><!-- 1x -->
+    </picture>
+</body>
+
+</html>
