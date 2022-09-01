@@ -1,0 +1,12 @@
+.class{
+    transition-property: color, font-size; /* изменяемое свойство */    
+    transition-duration: 1s; /* время выполнения изменений можно задавать в ms*/
+    transition-timing-function: ease-in-out; /* динамика */
+    transition-delay: 1s; /* отсрочка выполнения функции */
+    transition: color, font-size 500ms cubic-bezier(0.075, 0.82, 0.165, 1);  /* короткая запись     */
+  
+}
+
+.class:hover{
+    color: blue;
+}
