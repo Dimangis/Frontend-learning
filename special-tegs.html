@@ -7,6 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base target="_blank"><!-- применение ко всем ссылкам в документе -->
     <title>Document</title>
+    <script>
+        console.log('Hello world!') //можно объявить здесь
+    </script>
+    <script src="index.js"></script>
+    <style>
+        .alert {
+            color: rebeccapurple;
+            outline: 3px solid yellow;
+        }
+
+        .menu {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 400px;
+            padding: 40px;
+            background-color: #f2f2f2;
+            transition: transform .3s ease-in-out;
+            transform: translateX(-101%);
+        }
+
+        .menu.is-active {
+            transform: none;
+        }
+
+        .burger {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #f2f2f2;
+            border: 1px solid #333;
+            cursor: pointer;
+        }
+
+        .alert {
+            outline: 3px solid rgba(255, 0, 0, .3);
+            color: red;
+        }
+
+        .swiper {
+            width: 600px;
+            height: 500px;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+        }
+    </style>
+
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+    <!-- Acoordion jquery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+    </script>
 </head>
 
 <body>
@@ -27,7 +96,9 @@
     <sub>Down line</sub>
 
     <abbr title="Some termin">Word</abbr>
-
+    <script>
+        console.log('Hello world!') //можно объявить здесь
+    </script>
     <audio controls>
         <source src="/assets/audio.mp3" type="audio/mpeg">
         <source src="/assets/audio.ogg" type="audio/ogg">
@@ -48,13 +119,148 @@
     <!-- frameborder="0" - толщина вокруг окна -->
 
     <picture>
-        <source srcset="https://habrastorage.org/r/w1560/getpro/habr/upload_files/111/522/281/11152228177743773588dffef2f6fc53.jpeg 1x, https://habrastorage.org/r/w1560/getpro/habr/upload_files/111/522/281/11152228177743773588dffef2f6fc53.jpeg 2x">
-         <img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/111/522/281/11152228177743773588dffef2f6fc53.jpeg"><!-- 1x -->
+        <source
+            srcset="https://habrastorage.org/r/w1560/getpro/habr/upload_files/111/522/281/11152228177743773588dffef2f6fc53.jpeg 1x, https://habrastorage.org/r/w1560/getpro/habr/upload_files/111/522/281/11152228177743773588dffef2f6fc53.jpeg 2x">
+        <img
+            src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/111/522/281/11152228177743773588dffef2f6fc53.jpeg">
+        <!-- 1x -->
     </picture>
 
     <button class="btn">
         BUTTON
     </button>
+
+
+    <div class="block">
+        <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non odit ullam earum aliquid corrupti,
+            eum aperiam voluptate illum? Enim</p>
+        <p id="text" class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non odit ullam earum aliquid
+            corrupti, eum aperiam voluptate illum? Enim</p>
+        <p id="text3" class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non odit ullam earum
+            aliquid corrupti, eum aperiam voluptate illum? Enim</p>
+    </div>
+
+    <div id="menu" class="menu is-active">
+        <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+        </ul>
+    </div>
+    <div id="burger" class="burger"></div>
+
+    <p class="textt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quos, corporis voluptas illum
+        distinctio magni iure reiciendis voluptate tempora possimus veniam nihil voluptates totam sit ea earum
+        blanditiis placeat asperiores?</p>
+    <p class="textt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quos, corporis voluptas illum
+        distinctio magni iure reiciendis voluptate tempora possimus veniam nihil voluptates totam sit ea earum
+        blanditiis placeat asperiores?</p>
+    <p class="textt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quos, corporis voluptas illum
+        distinctio magni iure reiciendis voluptate tempora possimus veniam nihil voluptates totam sit ea earum
+        blanditiis placeat asperiores?</p>
+
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"
+                style="background-image: url(https://i08.fotocdn.net/s120/b4a0febe1043eccb/public_pin_l/2742790978.jpg);">
+            </div>
+            <div class="swiper-slide"
+                style="background-image: url(http://mobimg.b-cdn.net/v3/fetch/2c/2c38ec7c72e3d0094f591d6f735a3b8e.jpeg);">
+            </div>
+            <div class="swiper-slide"
+                style="background-image: url(https://proprikol.ru/wp-content/uploads/2020/08/krasivye-kartinki-kotikov-55.jpg);">
+            </div>
+            <div class="swiper-slide"
+                style="background-image: url(https://bugaga.ru/uploads/posts/2017-03/1489051999_kotik-hosiko-23.jpg);">
+            </div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>   
+    </div>
+
+
+
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+          <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+          suscipit faucibus urna.
+          </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+          <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+          <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+          </p>
+          <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos.
+          </p>
+        </div>
+      </div>
 </body>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            hide: true,
+        },
+        effect: 'cube',
+    });
+</script>
 
 </html>
