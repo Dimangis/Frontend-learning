@@ -168,7 +168,7 @@ h2 {
   background-position: center left;
   background-size: auto 100%;
   background-color: transparent;
-  background-image: url('/img/personal-account.svg');
+  background-image: url('./img/personal-account.svg');
 } */
 
 .personal-account-img path {
@@ -313,7 +313,7 @@ h2 {
 }
 
 .light-svg {
-  background: url('/img/light-arrow.svg');
+  background: url('./img/light-arrow.svg');
   display: inline-block;
   margin-left: 2px;
   height: 16px;
@@ -338,7 +338,7 @@ h2 {
 }
 
 .img-15 {
-  background-image: url('/img/Rectangle 15.png');
+  background-image: url('./img/Rectangle 15.png');
   background-size: auto 100%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -348,7 +348,7 @@ h2 {
 }
 
 .img-5 {
-  background-image: url('/img/Rectangle 5.png');
+  background-image: url('./img/Rectangle 5.png');
   background-size: auto 100%;
   background-repeat: no-repeat;
   display: inline-block;
@@ -358,7 +358,7 @@ h2 {
 }
 
 .img-331 {
-  background-image: url('/img/33 1.jpg');
+  background-image: url('./img/33 1.jpg');
   /* PNG!!! */
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -444,22 +444,22 @@ h2 {
 }
 
 .services-item-img10 {
-  background-image: url('/img/10.png');
+  background-image: url('./img/10.png');
   background-repeat: no-repeat;
 }
 
 .services-item-img15 {
-  background-image: url('/img/15.png');
+  background-image: url('./img/15.png');
   background-repeat: no-repeat;
 }
 
 .services-item-img12 {
-  background-image: url('/img/12.png');
+  background-image: url('./img/12.png');
   background-repeat: no-repeat;
 }
 
 .services-item-img11 {
-  background-image: url('/img/11.png');
+  background-image: url('./img/11.png');
   background-repeat: no-repeat;
 }
 
@@ -510,35 +510,35 @@ h2 {
 }
 
 .svg-bathtub {
-  background-image: url('/img/bathtub.svg');
+  background-image: url('./img/bathtub.svg');
 }
 
 .svg-hanger {
-  background-image: url('/img/hanger.svg');
+  background-image: url('./img/hanger.svg');
 }
 
 .svg-heating {
-  background-image: url('/img/heating.svg');
+  background-image: url('./img/heating.svg');
 }
 
 .svg-hotel-key {
-  background-image: url('/img/hotel-key.svg');
+  background-image: url('./img/hotel-key.svg');
 }
 
 .svg-parking {
-  background-image: url('/img/parking.svg');
+  background-image: url('./img/parking.svg');
 }
 
 .svg-reception {
-  background-image: url('/img/reception.svg');
+  background-image: url('./img/reception.svg');
 }
 
 .svg-security-box {
-  background-image: url('/img/security-box.svg');
+  background-image: url('./img/security-box.svg');
 }
 
 .svg-swimming-pool {
-  background-image: url('/img/swimming-pool.svg');
+  background-image: url('./img/swimming-pool.svg');
 }
 
 /* Section-placement */
@@ -581,7 +581,7 @@ h2 {
 }
 
 .placement-last-item {
-  background-image: url('/img/41.jpg');
+  background-image: url('./img/41.jpg');
 }
 
 .placement-item-price {
@@ -795,7 +795,7 @@ select {
   margin-bottom: 30px;
   border-radius: 15px;
   background-color: #333333;
-  background-image: url('/img/Footer-logo.svg');
+  background-image: url('./img/Footer-logo.svg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: calc(740px);
